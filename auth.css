@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f7fd;
+    color: #172c4d;
+}
+
+a {
+    color: #0873bf;
+}
+
+/* Header */
+
+.topbar {
+    background: #082858;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 20px 7%;
+}
+
+.topbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand span {
+    color: #ffc34b;
+}
+
+/* Login / Registration Layout */
+
+.auth-container {
+    width: 92%;
+    max-width: 480px;
+    margin: 50px auto;
+}
+
+.dashboard-container {
+    width: 92%;
+    max-width: 1050px;
+    margin: 42px auto;
+}
+
+.panel {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px #08285812;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.muted {
+    color: #68798e;
+    line-height: 1.6;
+}
+
+/* Form Fields */
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+label input {
+    display: block;
+    width: 100%;
+    font: inherit;
+    font-weight: normal;
+    margin-top: 8px;
+    padding: 13px;
+    border: 1px solid #c9d5e3;
+    border-radius: 9px;
+}
+
+label input:focus {
+    outline: 2px solid #087cc6;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: #ffbb43;
+    border: 0;
+    border-radius: 9px;
+    color: #192f4b;
+    padding: 14px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 23px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #ffc967;
+}
+
+.link-btn {
+    text-decoration: none;
+    width: auto;
+}
+
+.small {
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+/* Messages */
+
+.alert {
+    padding: 14px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.error {
+    background: #ffebeb;
+    color: #962323;
+}
+
+.success {
+    background: #e4f7e8;
+    color: #196331;
+}
+
+.alert ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+/* Dashboard */
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.panel p {
+    overflow-wrap: anywhere;
+}
+
+/* Logout */
+
+.logout {
+    margin: 0;
+}
+
+.logout button {
+    background: transparent;
+    color: white;
+    border: 1px solid #ffffff88;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+/* Mobile */
+
+@media(max-width:650px) {
+
+    .dash-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 22px;
+    }
+
+    .auth-container {
+        margin: 25px auto;
+    }
+}
